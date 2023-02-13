@@ -21,12 +21,12 @@ async def version(context):
 @client.event
 async def on_ready():
     # DO STUFF.....
-    general_channel = client.get_channel('') # Paste Channel id in get_channel('channel_id')
+    general_channel = client.get_channel() # Paste Channel id in get_channel(channel_id)
     await general_channel.send('Hello World!')
 
 @client.event
 async def on_disconnect():
-    general_channel = client.get_channel('') # Paste Channel id in get_channel('channel_id')
+    general_channel = client.get_channel() # Paste Channel id in get_channel(channel_id)
     await general_channel.send('Good Bye')
 @client.event
 async def on_message(message):
